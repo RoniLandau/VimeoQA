@@ -6,12 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'553596679'</initValue>
+      <initValue>'199060169'</initValue>
       <name>video_id</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'1686402'</initValue>
+      <initValue>'553596679'</initValue>
       <name>video_id2</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

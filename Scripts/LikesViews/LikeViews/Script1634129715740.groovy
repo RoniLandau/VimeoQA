@@ -19,15 +19,23 @@ import org.openqa.selenium.Keys as Keys
 
 //WebUI.openBrowser('')
 
+//navigate to chosen video
 WebUI.navigateToUrl('https://vimeo.com/' + GlobalVariable.video_id2)
 
+//focus on the window
 WebUI.focus(findTestObject('pageTitleObject/pageTitleCapture/div_Menu                                   _11ec99'))
-String temp = WebUI.getText(findTestObject('Object Repository/objectLikesViews/Page_YONA on Vimeo/span_3,530'))
-String temp1 = WebUI.getText(findTestObject('Object Repository/objectLikesViews/Page_YONA on Vimeo/span_202K'))
 
-likes_number = temp;
-GlobalVariable.views_num = temp1;
+//get text of the likes and views
+String likes = WebUI.getText(findTestObject('Object Repository/objectLikesViews/Page_YONA on Vimeo/span_3,530'))
+String views = WebUI.getText(findTestObject('Object Repository/objectLikesViews/Page_YONA on Vimeo/span_202K'))
 
+//save as Test case variable
+likes_number = likes;
+
+//save as global variable
+GlobalVariable.views_num = views;
+
+//print them
 println(likes_number);
 println(GlobalVariable.views_num);
 

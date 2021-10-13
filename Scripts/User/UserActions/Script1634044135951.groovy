@@ -20,9 +20,10 @@ import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.ResponseObject
 import groovy.json.JsonSlurper
 
+//make post call
 ResponseObject response = WS.sendRequest(findTestObject('UserAPI/vimeoComment'))
 
-
+// save the response body
 String body = response.getResponseBodyContent();
 println(body);
 

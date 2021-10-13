@@ -18,40 +18,42 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
+
+//navigate and login
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://vimeo.com/')
 
-WebUI.click(findTestObject('Object Repository/recorded objects2.1/Page_Vimeo  The worlds only all-in-one vide_2822c6/a_Log in'))
+WebUI.click(findTestObject('Object Repository/log in objects/Page_Vimeo  The worlds only all-in-one vide_2822c6/a_Log in'))
 
-WebUI.setText(findTestObject('Object Repository/recorded objects2.1/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_Log in to Vimeo_email'), 
+WebUI.setText(findTestObject('Object Repository/log in objects/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_Log in to Vimeo_email'), 
     'ronyland@post.bgu.ac.il')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/recorded objects2.1/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_Log in to Vimeo_password'), 
+WebUI.setEncryptedText(findTestObject('Object Repository/log in objects/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_Log in to Vimeo_password'), 
     '3JtwHyzuAJdJUxaSbWvCLQ==')
 
-WebUI.click(findTestObject('Object Repository/recorded objects2.1/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_A security code has been sent to your_7a5454'))
+WebUI.click(findTestObject('Object Repository/log in objects/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_A security code has been sent to your_7a5454'))
 
+//wait that the browser stable
 WebUI.delay(5)
 
+//navigate to chosen video
 WebUI.navigateToUrl('https://vimeo.com/' + GlobalVariable.video_id)
 
-//WebUI.delay(5)
+//focus on the window (without focusing it he wont load properly)
 WebUI.focus(findTestObject('pageTitleObject/pageTitleCapture/div_Menu                                   _11ec99'))
 
-//WebUI.scrollToPosition(9999999, 9999999)
-//WebUI.delay(10)
-//String comment = WebUI.getText(findTestObject('dynamicComment'))
+//find the text by injecting the current XPath
 String comment = WebUI.getText(findTestObject('dynamicComment', [('comment_id') : GlobalVariable.comment_id]))
-
-//String section_comments1 = WebUI.getText(findTestObject('Object Repository/recorded objects2.1/Page_FOX on Vimeo/section_5 CommentsGabriel H FermanelliPRO5 _fb57c4'))
 
 //println(comment)
 
+//extract the "text" of the comment
 comment_text = (comment.split('\n')[1])
 
-//
+
 println(comment_text)
 
+//VERIFY the text of my comment
 WebUI.verifyMatch(comment_text, GlobalVariable.comment_text, false)
 
