@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n \&quot;text\&quot; : \&quot;nice video\&quot; \n}&quot;,
+  &quot;text&quot;: &quot;{\n \&quot;text\&quot; : \&quot;Awesome! Thank you.\&quot; \n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
