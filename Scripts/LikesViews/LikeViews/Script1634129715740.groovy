@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.navigateToUrl('https://vimeo.com/' + GlobalVariable.video_id2)
 
-WebUI.focus(findTestObject('check3/pageTitleCapture/div_Menu                                   _11ec99'))
+WebUI.focus(findTestObject('pageTitleObject/pageTitleCapture/div_Menu                                   _11ec99'))
 String temp = WebUI.getText(findTestObject('Object Repository/objectLikesViews/Page_YONA on Vimeo/span_3,530'))
 String temp1 = WebUI.getText(findTestObject('Object Repository/objectLikesViews/Page_YONA on Vimeo/span_202K'))
 

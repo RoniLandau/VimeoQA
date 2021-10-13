@@ -37,7 +37,7 @@ WebUI.delay(5)
 WebUI.navigateToUrl('https://vimeo.com/' + GlobalVariable.video_id)
 
 //WebUI.delay(5)
-WebUI.focus(findTestObject('check3/pageTitleCapture/div_Menu                                   _11ec99'))
+WebUI.focus(findTestObject('pageTitleObject/pageTitleCapture/div_Menu                                   _11ec99'))
 
 //WebUI.scrollToPosition(9999999, 9999999)
 //WebUI.delay(10)
@@ -45,7 +45,7 @@ WebUI.focus(findTestObject('check3/pageTitleCapture/div_Menu                    
 String comment = WebUI.getText(findTestObject('dynamicComment', [('comment_id') : GlobalVariable.comment_id]))
 
 //String section_comments1 = WebUI.getText(findTestObject('Object Repository/recorded objects2.1/Page_FOX on Vimeo/section_5 CommentsGabriel H FermanelliPRO5 _fb57c4'))
-//String section_comments2 = WebUI.getText(findTestObject('catching1/Page_Explore on Vimeo/section_2 Comments 6 years agoReplyEli Cohen2 hours agonice videoReplyAdd a new comment'))
+
 //println(comment)
 
 comment_text = (comment.split('\n')[1])
