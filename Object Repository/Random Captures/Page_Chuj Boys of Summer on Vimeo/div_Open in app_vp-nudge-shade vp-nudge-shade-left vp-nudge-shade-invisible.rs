@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Open in app_vp-nudge-shade vp-nudge-shade-left vp-nudge-shade-invisible</name>
+   <tag></tag>
+   <elementGuidId>748fa30d-6855-4385-971e-eada7287b397</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='${video_id}']/div/div[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.vp-nudge-shade.vp-nudge-shade-left.vp-nudge-shade-invisible</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>vp-nudge-shade vp-nudge-shade-left vp-nudge-shade-invisible</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;553596679&quot;)/div[@class=&quot;vp-video-wrapper&quot;]/div[@class=&quot;vp-nudge-shade vp-nudge-shade-left vp-nudge-shade-invisible&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='553596679']/div/div[4]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/div/div/div/div/div/div[4]</value>
+   </webElementXpaths>
+</WebElementEntity>

@@ -17,10 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+/* WebUI.openBrowser('') */
 
 //navigate to chosen video
 WebUI.navigateToUrl('https://vimeo.com/' + GlobalVariable.video_id2)
+
+//verify you're in a clip page, by check the if this is the CORRECT video id of clip object
+WebUI.verifyElementPresent(findTestObject('Random Captures/Page_Chuj Boys of Summer on Vimeo/div_Open in app_vp-nudge-shade vp-nudge-shade-left vp-nudge-shade-invisible', ["video_id": GlobalVariable.video_id2]),
+	2)
 
 //focus on the window
 WebUI.focus(findTestObject('pageTitleObject/pageTitleCapture/div_Menu                                   _11ec99'))

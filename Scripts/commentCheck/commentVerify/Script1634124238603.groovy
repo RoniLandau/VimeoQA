@@ -18,13 +18,21 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement as WebElement
 
-
 //navigate and login
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://vimeo.com/')
 
+//verify you're in vimeo main page by check if the title present
+WebUI.verifyElementPresent(findTestObject('Random Captures/Page_Vimeo  The worlds only all-in-one video solution/h1_Unlock thepower of video'), 
+    2)
+
+
 WebUI.click(findTestObject('Object Repository/log in objects/Page_Vimeo  The worlds only all-in-one vide_2822c6/a_Log in'))
+
+//verify you're in login by check if the log_in string object is present
+WebUI.verifyElementPresent(findTestObject('Random Captures/Page_Vimeo  The worlds only all-in-one video solution/span_Log in to Vimeo'), 
+    2)
 
 WebUI.setText(findTestObject('Object Repository/log in objects/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_Log in to Vimeo_email'), 
     'ronyland@post.bgu.ac.il')
@@ -34,23 +42,31 @@ WebUI.setEncryptedText(findTestObject('Object Repository/log in objects/Page_Vim
 
 WebUI.click(findTestObject('Object Repository/log in objects/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_A security code has been sent to your_7a5454'))
 
+//verify you're logged in by check if the username object box present
+WebUI.verifyElementPresent(findTestObject('Random Captures/Page_Videos on Vimeo/div_Eli Cohen'), 2)
+
 //wait that the browser stable
 WebUI.delay(5)
 
 //navigate to chosen video
 WebUI.navigateToUrl('https://vimeo.com/' + GlobalVariable.video_id)
 
+//verify you're in a clip page, by check the if this is the CORRECT video id of clip object
+WebUI.verifyElementPresent(findTestObject('Random Captures/Page_Chuj Boys of Summer on Vimeo/div_Open in app_vp-nudge-shade vp-nudge-shade-left vp-nudge-shade-invisible', ["video_id": GlobalVariable.video_id]), 
+    2)
+
 //focus on the window (without focusing it he wont load properly)
 WebUI.focus(findTestObject('pageTitleObject/pageTitleCapture/div_Menu                                   _11ec99'))
+
+//verify that the window focused by check if random object ("new comment text") at the bottom of the windows loaded
+WebUI.verifyElementPresent(findTestObject('Random Captures/Page_Chuj Boys of Summer on Vimeo/span_Add a new comment'), 2)
 
 //find the text by injecting the current XPath
 String comment = WebUI.getText(findTestObject('dynamicComment', [('comment_id') : GlobalVariable.comment_id]))
 
 //println(comment)
-
 //extract the "text" of the comment
 comment_text = (comment.split('\n')[1])
-
 
 println(comment_text)
 
