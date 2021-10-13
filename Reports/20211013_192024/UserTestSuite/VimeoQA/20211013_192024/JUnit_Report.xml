@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="VimeoQA" time="10.909" tests="2" failures="0" errors="1">
+   <testsuite name="VimeoQA" tests="2" failures="0" errors="1" time="10.909" skipped="0" timestamp="2021-10-13 19:20:31" hostname="Rony - 10.100.102.19" id="Test Suites/UserTestSuite/VimeoQA">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Rony\\Desktop\\AnnView\\VimeoQA\\Reports\\20211013_192024\\UserTestSuite\\VimeoQA\\20211013_192024"/>
+         <property name="logFiles" value="C:\\Users\\Rony\\Desktop\\AnnView\\VimeoQA\\Reports\\20211013_192024\\UserTestSuite\\VimeoQA\\20211013_192024\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Rony - 10.100.102.19"/>
+         <property name="hostAddress" value="10.100.102.19"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.1.0.208"/>
+      </properties>
+      <testcase name="Test Cases/User/UserActions" time="7.576" classname="Test Cases/User/UserActions" status="PASSED">
+         <system-out><![CDATA[2021-10-13 19:20:31 - [TEST_CASE][PASSED] - Test Cases/User/UserActions: Test Cases/User/UserActions
+
+2021-10-13 19:20:34 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("User/vimeoComment")): Send request successfully
+
+2021-10-13 19:20:39 - [MESSAGE][INFO] - HAR: C:\Users\Rony\Desktop\AnnView\VimeoQA\Reports\20211013_192024\UserTestSuite\VimeoQA\20211013_192024\requests\main\0.har
+
+2021-10-13 19:20:39 - [MESSAGE][PASSED] - Send request successfully
+
+2021-10-13 19:20:39 - [TEST_STEP][PASSED] - body = response.getResponseBodyContent(): null
+
+2021-10-13 19:20:39 - [TEST_STEP][PASSED] - println(body): null
+
+2021-10-13 19:20:39 - [TEST_STEP][PASSED] - parser = new groovy.json.JsonSlurper(): null
+
+2021-10-13 19:20:39 - [TEST_STEP][PASSED] - responseAfterParsing = parser.parseText(body): null
+
+2021-10-13 19:20:39 - [TEST_STEP][PASSED] - link = link: null
+
+2021-10-13 19:20:39 - [TEST_STEP][PASSED] - values = link.split("#"): null
+
+2021-10-13 19:20:39 - [TEST_STEP][PASSED] - comment_id = values[1]: null
+
+2021-10-13 19:20:39 - [TEST_STEP][PASSED] - println(comment_id): null
+
+2021-10-13 19:20:39 - [TEST_STEP][PASSED] - comment_text = text: null
+
+2021-10-13 19:20:39 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+2021-10-13 19:20:39 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/commentCheck/commentVerify" time="1.512" classname="Test Cases/commentCheck/commentVerify" status="ERROR">
+         <error type="ERROR" message="Test Cases/commentCheck/commentVerify FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/Rony/Desktop/AnnView/VimeoQA/Scripts/commentCheck/commentVerify/Script1634124238603.groovy: 43: The current scope already contains a variable of the name comment
+ @ line 43, column 8.
+   String comment = WebUI.getText(findTestObject('dynamicComment',[('comment_id') : GlobalVariable.comment_id]))
+          ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1634142024581.run(TempTestSuite1634142024581.groovy:36)
+"/>
+         <system-out><![CDATA[2021-10-13 19:20:39 - [TEST_CASE][ERROR] - Test Cases/commentCheck/commentVerify: Test Cases/commentCheck/commentVerify FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/Rony/Desktop/AnnView/VimeoQA/Scripts/commentCheck/commentVerify/Script1634124238603.groovy: 43: The current scope already contains a variable of the name comment
+ @ line 43, column 8.
+   String comment = WebUI.getText(findTestObject('dynamicComment',[('comment_id') : GlobalVariable.comment_id]))
+          ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1634142024581.run(TempTestSuite1634142024581.groovy:36)]]></system-out>
+         <system-err><![CDATA[2021-10-13 19:20:39 - [TEST_CASE][ERROR] - Test Cases/commentCheck/commentVerify: Test Cases/commentCheck/commentVerify FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/Rony/Desktop/AnnView/VimeoQA/Scripts/commentCheck/commentVerify/Script1634124238603.groovy: 43: The current scope already contains a variable of the name comment
+ @ line 43, column 8.
+   String comment = WebUI.getText(findTestObject('dynamicComment',[('comment_id') : GlobalVariable.comment_id]))
+          ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1634142024581.run(TempTestSuite1634142024581.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-10-13 19:20:31 - [TEST_SUITE][ERROR] - VimeoQA: Test Cases/commentCheck/commentVerify FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/Rony/Desktop/AnnView/VimeoQA/Scripts/commentCheck/commentVerify/Script1634124238603.groovy: 43: The current scope already contains a variable of the name comment
+ @ line 43, column 8.
+   String comment = WebUI.getText(findTestObject('dynamicComment',[('comment_id') : GlobalVariable.comment_id]))
+          ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1634142024581.run(TempTestSuite1634142024581.groovy:36)]]></system-out>
+      <system-err><![CDATA[2021-10-13 19:20:31 - [TEST_SUITE][ERROR] - VimeoQA: Test Cases/commentCheck/commentVerify FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/Rony/Desktop/AnnView/VimeoQA/Scripts/commentCheck/commentVerify/Script1634124238603.groovy: 43: The current scope already contains a variable of the name comment
+ @ line 43, column 8.
+   String comment = WebUI.getText(findTestObject('dynamicComment',[('comment_id') : GlobalVariable.comment_id]))
+          ^
+
+1 error
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:430)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:421)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:400)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:392)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:273)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1634142024581.run(TempTestSuite1634142024581.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

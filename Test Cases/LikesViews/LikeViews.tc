@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>LikeViews</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b3ae14bc-2ff7-48d8-a7e9-286732e3034d</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9b6c0da3-41fc-4fb8-8cc0-b57f87e943a0</id>
+      <masked>false</masked>
+      <name>likes_number</name>
+   </variable>
+</TestCaseEntity>

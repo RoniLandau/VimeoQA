@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/try fix bug/Page_YONA on Vimeo/Page_SEAWOLF on Vimeo/div_Eli Cohen15 seconds agonice video",
+      "brokenLocator": "//article[@id\u003d\u0027comment_19553739\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Plus\u0027])[2]/following::div[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20211013_184855/UserTestSuite/VimeoQA/20211013_184855/Object Repository/try fix bug/Page_YONA on Vimeo/Page_SEAWOLF on Vimeo/div_Eli Cohen15 seconds agonice video_neighbor.png"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+VimeoQA,Chrome 94.0.4606.81,,,2021-10-13 19:03:04,2021-10-13 19:04:07,1m - 3.084s,FAILED
+,,,,,,,
+Test Cases/User/UserActions,Chrome 94.0.4606.81,,,2021-10-13 19:03:05,2021-10-13 19:03:12,7.621s,PASSED
+"response = sendRequest(findTestObject(""User/vimeoComment""))",Chrome 94.0.4606.81,,,2021-10-13 19:03:07,2021-10-13 19:03:12,5.248s,PASSED
+body = response.getResponseBodyContent(),Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:03:12,0.027s,PASSED
+println(body),Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:03:12,0.007s,PASSED
+parser = new groovy.json.JsonSlurper(),Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:03:12,0.024s,PASSED
+responseAfterParsing = parser.parseText(body),Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:03:12,0.024s,PASSED
+link = link,Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:03:12,0.027s,PASSED
+"values = link.split(""#"")",Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:03:12,0.004s,PASSED
+comment_id = values[1],Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:03:12,0.010s,PASSED
+println(comment_id),Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:03:12,0.000s,PASSED
+comment_text = text,Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:03:12,0.000s,PASSED
+"verifyResponseStatusCode(response, 201)",Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:03:12,0.034s,PASSED
+,,,,,,,
+Test Cases/commentCheck/commentVerify,Chrome 94.0.4606.81,,,2021-10-13 19:03:12,2021-10-13 19:04:07,54.734s,FAILED
+"openBrowser("""")",Chrome 94.0.4606.81,,,2021-10-13 19:03:14,2021-10-13 19:03:17,2.977s,PASSED
+"navigateToUrl(""https://vimeo.com/"")",Chrome 94.0.4606.81,,,2021-10-13 19:03:17,2021-10-13 19:03:18,1.343s,PASSED
+"click(findTestObject(""Object Repository/recorded objects2.1/Page_Vimeo  The worlds only all-in-one vide_2822c6/a_Log in""))",Chrome 94.0.4606.81,,,2021-10-13 19:03:18,2021-10-13 19:03:21,2.740s,PASSED
+"setText(findTestObject(""Object Repository/recorded objects2.1/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_Log in to Vimeo_email""), ""ronyland@post.bgu.ac.il"")",Chrome 94.0.4606.81,,,2021-10-13 19:03:21,2021-10-13 19:03:22,1.168s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/recorded objects2.1/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_Log in to Vimeo_password""), ""3JtwHyzuAJdJUxaSbWvCLQ=="")",Chrome 94.0.4606.81,,,2021-10-13 19:03:22,2021-10-13 19:03:23,0.667s,PASSED
+"click(findTestObject(""Object Repository/recorded objects2.1/Page_Vimeo  The worlds only all-in-one vide_2822c6/input_A security code has been sent to your_7a5454""))",Chrome 94.0.4606.81,,,2021-10-13 19:03:23,2021-10-13 19:03:23,0.578s,PASSED
+"navigateToUrl(""https://vimeo.com/"" + video_id)",Chrome 94.0.4606.81,,,2021-10-13 19:03:23,2021-10-13 19:03:27,3.419s,PASSED
+"focus(findTestObject(""check3/pageTitleCapture/div_Menu                                   _11ec99""))",Chrome 94.0.4606.81,,,2021-10-13 19:03:27,2021-10-13 19:03:28,1.075s,PASSED
+"comment = getText(findTestObject(""try fix bug/Page_YONA on Vimeo/Page_SEAWOLF on Vimeo/div_Eli Cohen15 seconds agonice video"", [""comment_id"":comment_id]))",Chrome 94.0.4606.81,,,2021-10-13 19:03:28,2021-10-13 19:04:06,37.916s,FAILED

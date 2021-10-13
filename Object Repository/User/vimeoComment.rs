@@ -43,9 +43,9 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'126631320'</defaultValue>
+      <defaultValue>GlobalVariable.video_id</defaultValue>
       <description></description>
-      <id>37fcb1b5-4735-47b3-98dc-af94ed2a04f9</id>
+      <id>725235ca-a1aa-4d2f-93d2-f981e4e25ce7</id>
       <masked>false</masked>
       <name>video</name>
    </variables>
@@ -61,6 +61,9 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

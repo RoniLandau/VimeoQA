@@ -16,12 +16,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.testobject.RequestObject
+import com.kms.katalon.core.testobject.ResponseObject
+import groovy.json.JsonSlurper
 
-response = WS.sendRequest(findTestObject('User/vimeoComment'))
+ResponseObject response = WS.sendRequest(findTestObject('User/vimeoComment'))
 
-comment_text = response.text
 
-WS.verifyResponseStatusCode('response', 201)
+String body = response.getResponseBodyContent();
+println(body);
 
-WS.verifyElementPropertyValue('response', '', null)
+//parse the json body
+JsonSlurper parser = new JsonSlurper()
+def responseAfterParsing = parser.parseText(body);
+
+//extract the link for the comment id and save it as global
+String link = responseAfterParsing.link;
+def values = link.split('#');
+GlobalVariable.comment_id = values[1];
+println(GlobalVariable.comment_id);
+
+//extract the text and save it as global
+GlobalVariable.comment_text = responseAfterParsing.text;
+
+WS.verifyResponseStatusCode(response, 201)
+
 

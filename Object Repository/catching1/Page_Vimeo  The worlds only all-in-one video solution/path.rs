@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>path</name>
+   <tag></tag>
+   <elementGuidId>d7f36e4e-7393-48a2-925c-ffdcf7617fa1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>path</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>d</name>
+      <type>Main</type>
+      <value>M6.5 11.817A5.327 5.327 0 0011.817 6.5 5.327 5.327 0 006.5 1.183 5.327 5.327 0 001.183 6.5 5.327 5.327 0 006.5 11.817zM6.5 13A6.51 6.51 0 010 6.5 6.51 6.51 0 016.5 0 6.51 6.51 0 0113 6.5 6.51 6.51 0 016.5 13z</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>fill-rule</name>
+      <type>Main</type>
+      <value>nonzero</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;menu-container&quot;)/div[@class=&quot;right-container&quot;]/div[@class=&quot;search-container&quot;]/a[1]/svg[1]/g[1]/path[2]</value>
+   </webElementProperties>
+</WebElementEntity>

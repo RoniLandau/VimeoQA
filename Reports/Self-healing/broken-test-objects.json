@@ -1,3 +1,64 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/check3/only comment catch/Page_Soccer Moves - Soccer Kicking - Soccer_d22ea9/div_Eli Cohen39 minutes agonice video",
+      "brokenLocator": "//article[@id\u003dcomment_19553261]\n",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//article[@id\u003d\u0027comment_19553261\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/check3/only comment catch/Page_Soccer Moves - Soccer Kicking - Soccer_d22ea9/div_Eli Cohen39 minutes agonice video_idRelative.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/check3/only comment catch/Page_Soccer Moves - Soccer Kicking - Soccer_d22ea9/div_Eli Cohen39 minutes agonice video",
+      "brokenLocator": "//article[@id\u003d\u00271686402\u0027]\n",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Reply\u0027])[5]/following::div[5]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/check3/only comment catch/Page_Soccer Moves - Soccer Kicking - Soccer_d22ea9/div_Eli Cohen39 minutes agonice video_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/objectLikesViews/Page_YONA on Vimeo/span_3,530",
+      "brokenLocator": "//main[@id\u003d\u0027main\u0027]/div/main/div/div/div/div[2]/div/div/div[2]/div/div/span/a/span/span[2]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Follow\u0027])[1]/following::span[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/objectLikesViews/Page_YONA on Vimeo/span_3,530_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/try fix bug/Page_YONA on Vimeo/Page_SEAWOLF on Vimeo/div_Eli Cohen15 seconds agonice video",
+      "brokenLocator": "//article[@id\u003d\u0027comment_19553614\u0027]/div/div[2]/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Reply\u0027])[9]/following::div[5]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/try fix bug/Page_YONA on Vimeo/Page_SEAWOLF on Vimeo/div_Eli Cohen15 seconds agonice video_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/try fix bug/Page_YONA on Vimeo/Page_SEAWOLF on Vimeo/p_nice video",
+      "brokenLocator": "//article[@id\u003d\u0027comment_19553614\u0027]/div/div[2]/div/div/p",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Eli Cohen\u0027])[1]/following::p[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/try fix bug/Page_YONA on Vimeo/Page_SEAWOLF on Vimeo/p_nice video_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/try fix bug/Page_YONA on Vimeo/Page_SEAWOLF on Vimeo/div_Eli Cohen15 seconds agonice video",
+      "brokenLocator": "//article[@id\u003d\u0027comment_19553739\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Plus\u0027])[2]/following::div[8]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/try fix bug/Page_YONA on Vimeo/Page_SEAWOLF on Vimeo/div_Eli Cohen15 seconds agonice video_neighbor.png"
+    }
+  ]
 }

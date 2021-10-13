@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>commentVerify</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7b661fc7-858b-4fe6-a094-4808d2efe606</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.video_id</defaultValue>
+      <description></description>
+      <id>b58bbf1d-1b49-420a-89b7-dc9c84824dca</id>
+      <masked>false</masked>
+      <name>video</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4076c266-7e9a-4371-98fa-a830603ba951</id>
+      <masked>false</masked>
+      <name>comment_text</name>
+   </variable>
+</TestCaseEntity>
