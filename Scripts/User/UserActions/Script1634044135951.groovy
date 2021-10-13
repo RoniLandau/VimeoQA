@@ -23,6 +23,10 @@ import groovy.json.JsonSlurper
 //make post call
 ResponseObject response = WS.sendRequest(findTestObject('UserAPI/vimeoComment'))
 
+
+//verify the status code
+WS.verifyResponseStatusCode(response, 201)
+
 // save the response body
 String body = response.getResponseBodyContent();
 println(body);
@@ -35,11 +39,12 @@ def responseAfterParsing = parser.parseText(body);
 String link = responseAfterParsing.link;
 def values = link.split('#');
 GlobalVariable.comment_id = values[1];
-println(GlobalVariable.comment_id);
+
+//println(GlobalVariable.comment_id);
 
 //extract the text and save it as global
 GlobalVariable.comment_text = responseAfterParsing.text;
 
-WS.verifyResponseStatusCode(response, 201)
+
 
 

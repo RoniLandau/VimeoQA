@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//WebUI.openBrowser('')
+WebUI.openBrowser('')
 
 //navigate to chosen video
 WebUI.navigateToUrl('https://vimeo.com/' + GlobalVariable.video_id2)
@@ -25,19 +25,29 @@ WebUI.navigateToUrl('https://vimeo.com/' + GlobalVariable.video_id2)
 //focus on the window
 WebUI.focus(findTestObject('pageTitleObject/pageTitleCapture/div_Menu                                   _11ec99'))
 
+//verify that the window focused by check if random object ("new comment text") at the bottom of the windows loaded
+WebUI.verifyElementPresent(findTestObject('Random Captures/Page_Chuj Boys of Summer on Vimeo/span_Add a new comment'), 2)
+
 //get text of the likes and views
 String likes = WebUI.getText(findTestObject('Object Repository/objectLikesViews/Page_YONA on Vimeo/span_3,530'))
+
 String views = WebUI.getText(findTestObject('Object Repository/objectLikesViews/Page_YONA on Vimeo/span_202K'))
 
 //save as Test case variable
-likes_number = likes;
+likes_number = likes
 
 //save as global variable
-GlobalVariable.views_num = views;
+GlobalVariable.views_num = views
+
+//verify that we got a real existing string
+WebUI.verifyTextPresent(likes_number, false)
+
+WebUI.verifyTextPresent(GlobalVariable.views_num, false)
 
 //print them
-println(likes_number);
-println(GlobalVariable.views_num);
+println(likes_number)
+
+println(GlobalVariable.views_num)
 
 WebUI.closeBrowser()
 
