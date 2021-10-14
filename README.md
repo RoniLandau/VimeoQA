@@ -21,13 +21,15 @@ Katalon Studio: https://www.katalon.com/download/
 Git: https://git-scm.com/download/win
 
 Run the Tests:
+
 Open Katalon Studio.
+
 Inside Katalon Studio:
 1. Clone the project from git: on the left you will see "clone git project" press on it and enter on the url "https://github.com/RoniLandau/VimeoQA.git" - no need to authenticate.
 2. You may need to update chrome web broswer - press "tools"-> "update web browsers" -> "chrome"
 3. Search "VimeoQA" in "TextExplorer" (from the left), it will find you Test Suite with this name, open it.
-4. Press the green "Play" button on the upper toolbar (of the right-side of the windows). Next to the button there is a small arrow you can choose to run on different browsers.
-5. You can see at the bottom the test results, and you can see on the "reports" folder (on the left-side) the result-report either.
+4. Press the green "Play" button on the upper toolbar (of the right-side of the window). Next to the button there is a small arrow you can choose to run on different browsers.
+5. You can see at the bottom the test results. You can see a report on the "reports" folder (on the left-side).
 
 
 Extras:
