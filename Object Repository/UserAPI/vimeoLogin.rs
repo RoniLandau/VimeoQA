@@ -20,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>bearer c1b2605d2b2cd30e5477ba6383e257fb</value>
+      <value></value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
